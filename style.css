@@ -1,0 +1,160 @@
+
+body {
+    height: 100vh;
+}
+#milestone-wrapper {
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    border-radius: 15px;
+    height: 120px;
+    box-shadow: 0 0 2px 1px grey;
+    background-color: white;
+}
+#indicator-wrapper, #actions-wrapper, #milestone-list {
+    height: 100%;
+}
+
+#indicator-wrapper, #actions-wrapper {
+    width: 10%;
+}
+#milestone-list {
+    width: 70%;
+}
+#indicator-wrapper > i {
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: grey;
+}
+#indicator-wrapper .icon-holder, 
+#actions-wrapper .icon-holder {
+    width: 100%;
+    height: 50%;
+}
+#indicator-wrapper .holder1 .dot {
+    width: 15px;
+    aspect-ratio: 1;
+    background-color: blue;
+    border: 2px solid white;
+    outline: 3px solid rgba(0, 0, 255, 0.39);
+}
+#indicator-wrapper .holder2 i {
+    color: firebrick;
+}
+#milestone-list .milestone {
+    width: 100%;
+    height: 50%;
+    font-weight: 500;
+}
+#milestone-list .milestone1 {
+    color: blue;
+    border-bottom: 1px solid grey;
+}
+#map-area {
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 128, 0, 0.219);
+}
+#details-wrapper {
+    width: 100%;
+    height: 40%;
+    border-radius: 20px 20px 0 0;
+    background-color: white;
+    box-shadow: 0 0 2px 1px grey;
+}
+#details-wrapper .grabber-holder {
+    height: 25px;
+}
+#details-wrapper .grabber-holder .grabber {
+    width: 10%;
+    height: 3px;
+    border-radius: 10px;
+    background-color: grey;
+}
+.descriptor .text-holder {
+    flex: 8;
+}
+.descriptor .icon-holder {
+    flex: 3;
+}
+.descriptor .icon-holder .icon-bg {
+    height: 80%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-color: lightgray;
+}
+.travel-types {
+    border-bottom: 1px solid grey;
+}
+.travel-types .type-field {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 10px 5px;
+    position: relative;
+}
+.travel-types .type-field.car {
+    color: blue;
+    font-weight: 500;
+}
+.travel-types .type-field.car::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 5px;
+    width: calc(100% - 10px);
+    height: 3px;
+    background-color: blue;
+    border-radius: 15px 15px 0 0;
+}
+.additional-info .info-display {
+    padding: 5px 10px;
+    background-color: rgba(0, 0, 255, 0.295);
+    border-radius: 10px;
+    font-weight: 500;
+}
+.total-resttime {
+    padding: 15px 0 5px 0;
+}
+.total-resttime .time {
+    color: green;
+}
+.ui-elements .element {
+    padding: 15px 20px;
+    border: 1px solid grey;
+    border-radius: 50px;
+    font-weight: 500;
+}
+.ui-elements .element.start {
+    background-color: blue;
+    color: white;
+}
+.ui-elements .element.start i {
+    transform: translateY(3px) rotate(-45deg);
+}
+.map-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 0 0 2px 1px grey;
+}
+#layer-button {
+    right: 30px;
+    top: 150px;
+}
+#search-button {
+    right: 30px;
+    top: 200px;
+}
+#location-button {
+    right: 30px;
+    top: 450px;
+    width: 55px;
+}
